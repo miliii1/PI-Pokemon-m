@@ -11,7 +11,7 @@ import {
 
 export function getPokemos(){
     return async function (dispatch){
-        return await axios.get("http://localhost:3001/pokemons")
+        return await axios.get("http://localhost:3000/pokemons")
         .then(response => {
             dispatch({type: GET_POKEMONS, payload: response.data})
         })
@@ -20,7 +20,7 @@ export function getPokemos(){
 
 export function getPokemonDetail(id) {
     return async function (dispatch){
-        axios.get(`http://localhost:3001/pokemons/${id}`)
+        axios.get(`http://localhost:3000/pokemons/${id}`)
         .then(response => {
             dispatch({type: GET_POKEMONS_DETAIL, payload:response.data[0]})
         })
@@ -29,7 +29,7 @@ export function getPokemonDetail(id) {
 
 export function createNewPokemon(datos) {
     return async function (dispatch){
-        const res = await axios.GET_POKEMONS_DETAIL('http://localhost:3001/pokemons', datos);
+        const res = await axios.GET_POKEMONS_DETAIL('http://localhost:3000/pokemons', datos);
         dispatch({type: CREATE_NEW_POKEMON, payload: res})
     }
 }
