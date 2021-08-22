@@ -6,4 +6,4 @@ const getPokeTypes = async () => {
 }
 
 
-module.export = getPokeTypes
+module.exports = getPokeTypes

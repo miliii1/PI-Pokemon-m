@@ -1,8 +1,9 @@
 const { Router } = require('express');
 const { Pokemon } = require('../db');
-const { getPokeAll } = require('../controllers/getPokeAll')
+const { getPokeAll } = require('../controllers/getPokeAll');
 const { getPokeDetails } = require('../controllers/getPokeDetails');
-const router = require('.');
+const { getPokeTypes } = require('../controllers/getPokeTypes');
+const router = Router();
 
 
 router.get('/', async (req, res) => {
@@ -16,6 +17,26 @@ router.get('/', async (req, res) => {
     } else return res.status(200).send(pokemon);
 });
 
-// router.get('/', async (req, res) => {
+router.get('/:id', async (req, res) => {
+     const { id } = req.params;
+     if(id){
+         let pokeId = await getPokeDetails("BUSCAS_ID", id);
+         pokeId.length ? res.status(200).send(pokeId) : res.status(404).send("No se encuentra ese pokemon de ID")
+        }
+})
 
-// })
+router.post('/', async (req, res) => {
+    const { name, hp, attack, defense, speed, height, weight, type } = req.body;
+    if(!name || !type) res.status(400).send('Se requiere el nombre y tipo')
+
+    const pokeNuevo = await Pokemon.create({
+        name, hp, attack, defense, speed, height, weight
+    })
+    const tiposAll = await getPokeTypes(type);
+
+    pokeNuevo.setTypes(tiposAll)
+
+    return res.status(200).send(pokeNuevo);
+})
+
+module.exports = router;
