@@ -7,5 +7,6 @@ const getPokeAll = async () => {
     const pokAll = apiPok.concat(dbPok);
     return pokAll;
 };
+console.log(getPokeAll)
 
 module.exports = getPokeAll

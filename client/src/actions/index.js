@@ -47,7 +47,7 @@ export function getTypes() {
     .then((res) => res.datos)
     .then((type) = {
         dispatch({type: GET_TYPES, payload: type})
-    })
+})
 }
 
 export const searchPokemons = (name) => async (dispatch) => {

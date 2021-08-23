@@ -1,17 +1,20 @@
 const axios = require('axios');
+const { POKEMON_URL } = require('../constants')
+
 
 const getPokeApi = async () => {
-    const laURL = await axios.get('https://pokeapi.co/api/v2/pokemon');
+    const laURL = await axios.get(POKEMON_URL);
     const elURL = await axios.get(laURL.data.next);
     const pokeApi = laURL.data.results.concat(elURL.data.results);
 
 
     const pokemons = await Promise.all(pokeApi.map(async (pokemon) => {
         const brock = await axios(pokemon.url);
+        console.log(brock)
         const data = brock.data;
         return {
             id: data.id,
-            name: data.name,/**/
+            name: data.name,
             Types: data.Types.map(type => {
                 return { name: type.type.name };
             }),

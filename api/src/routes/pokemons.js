@@ -10,7 +10,7 @@ router.get('/', async (req, res) => {
     const { name } = req.query;
 
     let pokemon = await getPokeAll();
-
+    
     if(name){
         const pokeDetails = await getPokeDetails(BUSCAS_NAME, name);
         pokeDetails.length ? res.status(200).send(pokeDetails) : res.status(404).send('No se ha encontrado');
@@ -40,3 +40,4 @@ router.post('/', async (req, res) => {
 })
 
 module.exports = router;
+
