@@ -68,6 +68,7 @@ const getPokeDB = async () => {
     })
 };
 
+//COMO LOS FILTRO
 const getPokeDetails = async (search, response) => {
     const detailPoke = await getPokemonsAll()
     if(search === 'BUSCAS_ID') { // LOS FILTRO Y TRAIGO LOS Q TIENE ID
@@ -80,7 +81,7 @@ const getPokeDetails = async (search, response) => {
     }
 }
 
-const getPokemonsAll = async () => {
+const getPokemonsAll = async () => { //LOS JUNTO A TODOS 
 	let pokeApi = await getPokeApi();
 	let pokeDB = await getPokeDB();
 	let fin = pokeApi.concat(pokeDB);
@@ -92,5 +93,3 @@ module.exports = {getPokeApi,
     getPokeDetails,
     getPokemonsAll
 }
-
-/*como coloco la imagen*/
