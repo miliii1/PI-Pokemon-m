@@ -1,15 +1,17 @@
 const { Router } = require('express');
 const { Pokemon } = require('../db');
-const { getPokeAll } = require('../controllers/getPokeAll');
-const { getPokeDetails } = require('../controllers/getPokeDetails');
-const { getPokeTypes } = require('../controllers/getPokeTypes');
+const { getPokemonsAll } = require('../controllers/pokemons');
+const { getPokeDetails } = require('../controllers/pokemons');
+const { getPokeTypes } = require('../controllers/Types');
 const router = Router();
 
 
 router.get('/', async (req, res) => {
     const { name } = req.query;
 
-    let pokemon = await getPokeAll();
+    let pokemon = await getPokemonsAll();
+    // console.log(pokemon)
+
     
     if(name){
         const pokeDetails = await getPokeDetails(BUSCAS_NAME, name);
@@ -40,4 +42,3 @@ router.post('/', async (req, res) => {
 })
 
 module.exports = router;
-
