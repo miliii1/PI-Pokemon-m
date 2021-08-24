@@ -3,6 +3,7 @@ const axios = require('axios');
 const { Pokemon, Types } = require('../db');
 
 
+//AQUI TRAIGO LOS POKEMONES
 const getPokeApi = async () => {
 	let elUrl = await axios.get('https://pokeapi.co/api/v2/pokemon');
 	let laUrl = await axios.get(elUrl.data.next);
@@ -56,6 +57,8 @@ const getPokeApi = async () => {
 //     return pokemons;
 // }
 
+
+//LOS POKEMONES DE LA BASE DE DATOS
 const getPokeDB = async () => {
     return await Pokemon.findAll({
         includes: {
@@ -67,11 +70,11 @@ const getPokeDB = async () => {
 
 const getPokeDetails = async (search, response) => {
     const detailPoke = await getPokemonsAll()
-    if(search === 'BUSCAS_ID') {
+    if(search === 'BUSCAS_ID') { // LOS FILTRO Y TRAIGO LOS Q TIENE ID
         const resp = detailPoke.filter(a => a.id.toString() === response);
         return resp
     }
-    if(search === 'BUSCAS_NAME') {
+    if(search === 'BUSCAS_NAME') {//LO MISMO PERO CON NAME
         const resp = detailPoke.filter(a => a.name === response);
         return resp
     }

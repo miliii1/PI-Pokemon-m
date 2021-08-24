@@ -5,6 +5,7 @@ const { getPokeDetails } = require('../controllers/pokemons');
 const { getPokeTypes } = require('../controllers/Types');
 const router = Router();
 
+//LAS RUTAS
 
 router.get('/', async (req, res) => {
     const { name } = req.query;
@@ -15,6 +16,7 @@ router.get('/', async (req, res) => {
     
     if(name){
         const pokeDetails = await getPokeDetails(BUSCAS_NAME, name);
+        //console.log(pokeDetails)
         pokeDetails.length ? res.status(200).send(pokeDetails) : res.status(404).send('No se ha encontrado');
     } else return res.status(200).send(pokemon);
 });

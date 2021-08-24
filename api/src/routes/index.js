@@ -9,6 +9,7 @@ const router = Router();
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
+//AQUI ESTAN LOS MIDDLEWARE
 router.use('/pokemons', Pokemons);
 router.use('/types', Types)
 

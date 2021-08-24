@@ -1,8 +1,9 @@
 const { Types } = require('../db')
 
 const getPokeTypes = async () => {
-    const pi = await Types.findAll()
-    return pi
+    const pokeApi = await Types.findAll()
+    return pokeApi
+    //tendria q devolverlo en formato json??
 }
 
 
