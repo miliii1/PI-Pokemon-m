@@ -41,13 +41,13 @@ export function filterPokemon(datos){
 }
 
 export function getTypes() {
-    return async (dispatch) => 
-    await axios
-    .get('https://localhost:3000/pokemons/type')
-    .then((res) => res.datos)
-    .then((type) = {
-        dispatch({type: GET_TYPES, payload: type})
-})
+    return (dispatch) => 
+    axios.get('https://localhost:3000/pokemons/type')
+    .then((res) => dispatch({
+        type: GET_TYPES, 
+        payload: res, 
+    })
+    );
 }
 
 export const searchPokemons = (name) => async (dispatch) => {
