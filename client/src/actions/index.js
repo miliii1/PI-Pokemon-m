@@ -1,16 +1,8 @@
 import axios from 'axios';
-import {
-    GET_POKEMONS,
-    GET_POKEMONS_DETAIL,
-    CREATE_NEW_POKEMON,
-    FILTER_POKEMON,
-    SEARCH_POKEMONS,
-    GET_TYPES
-
-    } from './constants'
+import {GET_POKEMONS,GET_POKEMONS_DETAIL,CREATE_NEW_POKEMON, FILTER_POKEMON, SEARCH_POKEMONS, GET_TYPES} from './constants'
 
 export function getPokemos(){
-    return async function (dispatch){
+    return async function (dispatch){//QUE HACE EL DISPATCH 
         return await axios.get("http://localhost:3000/pokemons")
         .then(response => {
             dispatch({type: GET_POKEMONS, payload: response.data})

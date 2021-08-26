@@ -1,18 +1,22 @@
 import React from 'react';
 import './Principal.css';
 import { Link } from 'react-router-dom';
-// import pokebola from '../../img/pokebola.png';
+import pokemonFondo from '../../img/pokemonFondo.png';
 
 function index() {
     return (
-        <div className="login-container">
-            <div className='login-pokeball'>
-                {/* <img className="index" src={}/> */}
+        <div className="login">
+            <heade className="fondo">
+                <img src={pokemonFondo} alt=" "/>
+            </heade>
+            <div className="contenedor-button">
+                <div className="titulo">
+                    <h2> BIENVENIDO
+                <Link exact to={"/home"}><button>Ingresar</button></Link>
+                </h2>
+                </div>
             </div>
-            <div className="login">
-                <Link exact to={"/home"} className="link"><span className="button">ENTRAR</span></Link>
-            </div>
-        </div >
+         </div>
     )
 }
 
