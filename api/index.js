@@ -18,11 +18,30 @@
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require('./src/app.js');
-const { conn } = require('./src/db.js');
+const {conn, Type, Pokemon} = require('./src/db.js');
+const axios = require('axios');
+const {POKEMON_TYPE} = require('./src/utils/constants');
 
-// Syncing all the models at once.
-conn.sync({ force: true }).then(() => {
-  server.listen(4001, () => {
-    console.log('%s listening at 4001'); // eslint-disable-line no-console
-  });
+conn.sync({force: true}).then(() => {
+	server.listen(3001, () => {
+		console.log('Server is listening on port 3001');
+		axios.get('https://pokeapi.co/api/v2/pokemon/psyduck').then((r) =>
+			Pokemon.create({
+				name: r.data.name,
+				hp: r.data.stats[0].base_stat,
+				attack: r.data.stats[1].base_stat,
+				defense: r.data.stats[2].base_stat,
+				speed: r.data.stats[5].base_stat,
+				height: r.data.height,
+				weight: r.data.weight,
+				sprite: r.data.sprites.front_default,
+			})
+				.then((r) => r.setTypes(11))
+				.then(console.log('PSYDUCK were created successfully'))
+		);
+		axios.get(POKEMON_TYPE).then((r) => {
+			r.data.results.forEach((el) => Type.create({name: el.name}));
+			console.log('The types were created successfully');
+		});
+	});
 });

@@ -1,21 +1,25 @@
-import './App.css';
 import React from 'react';
-import { Route } from 'react-router-dom';
-import Principal from './components/Principal';
-import Home from './components/Home';
-import AddPoke from './components/AddPoke';
-import PokeDetails from './components/PokeDetails'; 
+import {Route} from 'react-router-dom';
+import LandingPage from './components/LandingPage';
+import Home from './components/Home/Homecontainer';
+import Nav from './components/Nav/index';
+import Search from './components/Search/SearchContainer';
+import Paginate from './components/Paginate/Paginatecontainer';
+import Pokemon from './components/Pokemon/PokemonContainer';
+import Create from './components/CreatePokemon/CreateContainer';
 
 function App() {
-  return (
-    <React.Fragment>
-      <Route exact path="/" component={Principal}/>
-      <Route exact path="/home" component={Home}/>
-      <Route exact path="/home/createpokemon" component={AddPoke}/>
-      <Route exact path="/home/pokemon/:id" component={PokeDetails}/>
-    </React.Fragment>
-  );
+	return (
+		<React.Fragment>
+			<Route path='/' component={Nav} />
+			<Route exact path='/' component={LandingPage} />
+			<Route path='/home' component={Search} />
+			<Route path='/home' component={Home} />
+			<Route path='/home' component={Paginate} />
+			<Route path='/pokemon/:id' component={Pokemon} />
+			<Route path='/create' component={Create} />
+		</React.Fragment>
+	);
 }
 
 export default App;
-

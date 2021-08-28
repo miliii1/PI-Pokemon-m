@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+body {
+	font-family: 'Fjalla One', sans-serif;
+	background-image: url('https://wallpaperaccess.com/full/24942.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+button {
+	font-family: 'Fjalla One', sans-serif;
+}

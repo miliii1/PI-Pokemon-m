@@ -1,10 +1,9 @@
-const { Router } = require('express')
-const { Types } = require('../db');
-const router = Router()
+const {Router} = require('express');
+const {Type} = require('../db');
+const router = Router();
 
 router.get('/', async (req, res) => {
-    let typesPok = await Types.findAll();
-    return res.status(200).send(typesPok);
+	let totalTypes = await Type.findAll();
+	return res.status(200).send(totalTypes);
 });
-
 module.exports = router;
