@@ -25,10 +25,11 @@ export const StyledDiv = styled.div`
 			height: 160px;
 
 			.div_name {
+				font-family: "Press Start 2P", cursive, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 				width: 190px;
 				height: 30px;
 				margin: 0px 0px 0px 0px;
-				color: white;
+				color: black;
 				font-size: 25px;
 			}
 			.div_type_container {

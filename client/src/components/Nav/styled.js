@@ -17,8 +17,10 @@ export const StyledDiv = styled.div`
 		justify-content: flex-end;
 		width: 700px;
 		height: fit-content;
-		margin-left: 20px;
+		margin-right: 650px;
 		align-items: center;
+		font-family: 'Fjalla One';
+
 		.logo {
 			text-decoration: none;
 			color: white;
@@ -31,6 +33,11 @@ export const StyledDiv = styled.div`
 		display: flex;
 		justify-content: flex-end;
 		margin-right: 100px;
+		color: #161616;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-shadow: 1px 3px 3px #3D84B8 ;
 		.div_link {
 			display: flex;
 			align-items: center;

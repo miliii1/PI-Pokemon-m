@@ -12,37 +12,27 @@ export const StyledDiv = styled.div`
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	height: 750px;
+	top: -10%;
 
 	.div_nav {
 		display: flex;
 		align-items: center;
 		width: 100%;
-		height: 50px;
 		overflow: hidden;
 		background-color: #e63946;
 		position: fixed;
 		top: 0px;
 		left: 0px;
 		box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
-		.title {
-			display: flex;
-			justify-content: flex-end;
-			width: 481px;
-			height: fit-content;
-			margin-left: 20px;
-			align-items: center;
-			color: white;
-			text-shadow: 1px 2px 2px black;
-		}
+		
 	}
 
 	.div_content {
 		margin-top: 200px;
-		border: 3px solid white;
-		border-radius: 7px;
 		width: 400px;
 		padding: 20px 20px 20px 20px;
-		margin-left: 200px;
+		margin-left: 470px;
 
 		.h3 {
 			text-align: center;
@@ -72,8 +62,8 @@ export const StyledDiv = styled.div`
 	.div_btn {
 		display: flex;
 		justify-content: start;
-		margin-top: 30px;
-		margin-left: 270px;
+		margin-top: -35px;
+		margin-left: 540px;
 		.btn {
 			width: 300px;
 			height: 50px;
@@ -84,7 +74,7 @@ export const StyledDiv = styled.div`
 			color: white;
 			text-shadow: 2px 2px 2px black;
 			font-size: 30px;
-			background-color: #0ead69;
+			background-color: transparent;
 			&:hover {
 				box-shadow: 0 0 5px 0 #ffffff;
 			}

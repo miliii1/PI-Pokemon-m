@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {StyledDiv} from './styled';
+// import {titulo} from '../../img/titulo.png'
 
 export const Nav = () => {
 	return (
