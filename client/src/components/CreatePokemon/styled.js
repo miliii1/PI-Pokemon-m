@@ -59,13 +59,13 @@ export const StyledDiv = styled.div`
 			}
 		}
 		.div_errors {
-			background-color: rgba(230, 57, 70, 0.7);
-			text-align: justify;
+			text-color: rgb(255, 0, 21);
+			text-align: impact;
 			width: fit-content;
 			height: fit-content;
 			border-radius: 5px;
 			padding: 15px;
-			margin: -20px 0px 20px 0px;
+			margin: -50px 0px 20px 0px;
 
 			ul {
 				padding: 0px;
@@ -74,8 +74,10 @@ export const StyledDiv = styled.div`
 
 			.li_text {
 				padding: 0px;
-				color: white;
+				color: red;
 				text-shadow: 1px 1px 1px black;
+				font-family: impact;
+				font-size: 17px;
 			}
 		}
 		.div_f {
@@ -144,7 +146,7 @@ export const StyledDiv = styled.div`
 				color: white;
 				text-shadow: 2px 2px 2px black;
 				font-size: 20px;
-				background-color: #e63946;
+				background-color: #2a75bb;
 				&:hover {
 					box-shadow: 0 0 5px 0 #ffffff;
 				}

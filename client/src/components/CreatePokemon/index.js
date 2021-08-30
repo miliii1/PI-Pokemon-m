@@ -26,9 +26,9 @@ export const Create = ({
 						<div className='div_errors'>
 							<ul>
 								{Object.values(Errors).map((el) => (
-									<li key={el} className='li_text'>
+									<p key={el} className='li_text'>
 										{el}
-									</li>
+									</p>
 								))}
 							</ul>
 						</div>
@@ -82,7 +82,7 @@ export const Create = ({
 					{Alert.create ? (
 						<div className='div_create_confirm'>
 							<h3 className='message_create'>
-								¡El Pokemon se ha creado exitosamente!
+								!El Pokemon se ha creado exitosamente!
 							</h3>
 						</div>
 					) : null}
