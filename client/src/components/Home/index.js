@@ -1,12 +1,13 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 
+
 export const Home = ({id, name, types, sprite, pokemonFilter, handleClick}) => {
 	return (
 		<div>
 			{pokemonFilter === 'Search' ? (
 				<div value={'All'} onClick={handleClick} className='div_back'>
-					{'< BACK'}
+					{'<-- BACK'}
 				</div>
 			) : null}
 			<NavLink to={`/pokemon/${id}`} className='link'>

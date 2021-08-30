@@ -34,6 +34,15 @@ export const StyledDiv = styled.div`
 		padding: 20px 20px 20px 20px;
 		margin-left: 470px;
 
+		.logo-landing {
+			width: 70%;
+			height: auto;
+			margin-top: -25px;
+			margin-left: 55px;
+			margin-right: 35px;
+			
+		}
+
 		.h3 {
 			text-align: center;
 			font-size: 40px;
@@ -68,15 +77,16 @@ export const StyledDiv = styled.div`
 			width: 300px;
 			height: 50px;
 			border-style: solid;
-			border-color: black;
-			border-width: 1px;
+			border-color: #2a75bb;
+			border-width: 6px;
 			border-radius: 5px;
 			color: white;
 			text-shadow: 2px 2px 2px black;
 			font-size: 30px;
-			background-color: transparent;
+			background-color: #ffcb05;
 			&:hover {
 				box-shadow: 0 0 5px 0 #ffffff;
+				cursor: pointer;
 			}
 			&:active {
 				outline: 0;

@@ -7,7 +7,7 @@ export const StyledDiv = styled.div`
 	.div_container {
 		display: flex;
 		justify-content: center;
-		background-color: white;
+		background-color: #2a75bb;
 		width: auto;
 		height: 20px;
 		padding: 0px 0px 0px 0px;
@@ -15,6 +15,7 @@ export const StyledDiv = styled.div`
 		border-width: 2px 2px 2px 0px;
 		border-radius: 3px;
 		margin: 19px 0px 0px 0px;
+		margin-top: -523px;
 
 		.div_list {
 			padding: 3px 0px 0px 0px;
@@ -24,10 +25,10 @@ export const StyledDiv = styled.div`
 			border: solid #dee2e6;
 			border-width: 0px 0px 0px 2px;
 			border-radius: 1px;
-			background-color: white;
+			background-color: #2a75bb;
 			&:hover {
 				cursor: pointer;
-				background-color: #dee2e6;
+				background-color: #ffcb05;
 			}
 		}
 		.ul {
@@ -47,7 +48,7 @@ export const StyledDiv = styled.div`
 		}
 
 		.listed {
-			color: black;
+			color: #ffcb05;
 			font-size: 14px;
 			font-weight: lighter;
 			list-style: none;

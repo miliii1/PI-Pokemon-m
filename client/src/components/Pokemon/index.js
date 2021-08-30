@@ -17,6 +17,9 @@ const Pokemon = ({
 	return (
 		<StyledDiv>
 			<div className='div_card'>
+				<div className='div_title'>
+					<h1>{name.toUpperCase()}</h1>
+				</div>
 				<div className='div_img'>
 					<img src={sprite} className='img' alt='sprite' />
 					<div className='div_type_container'>
@@ -29,9 +32,6 @@ const Pokemon = ({
 								</div>
 							))}
 					</div>
-				</div>
-				<div className='div_title'>
-					<h1>{name.toUpperCase()}</h1>
 				</div>
 				<div className='div_details'>
 					{FORMS &&

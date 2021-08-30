@@ -13,6 +13,8 @@ export const StyledDiv = styled.div`
 		grid-gap: 0px;
 		width: 900px;
 		height: 500px;
+		margin-top: -29px;
+
 
 		.link {
 			text-decoration: none;
@@ -23,9 +25,17 @@ export const StyledDiv = styled.div`
 			text-align: center;
 			margin: 5px;
 			height: 160px;
+			background-color: rgba(15, 15, 15, 0.486);
+			border: 2px solid transparent;
+	border-color: black;
+    display: inline-table;
+    border-radius: 0.65rem;
+
+	
 
 			.div_name {
-				font-family: "Press Start 2P", cursive, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+				font-family: font-weight: bold;
+				font-size: large;;
 				width: 190px;
 				height: 30px;
 				margin: 0px 0px 0px 0px;
@@ -44,7 +54,7 @@ export const StyledDiv = styled.div`
 					border-color: black;
 					border-width: 0px;
 					border-radius: 6px;
-					background-color: #fcf300;
+					background-color: lime;
 					box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
 
 					.p {
@@ -54,7 +64,11 @@ export const StyledDiv = styled.div`
 			}
 
 			.img {
-				margin: 0px 0px -10px -10px;
+	width: 90px;
+    border-radius: 8rem;
+    box-shadow: 3px 3px 3px rgb(75, 75, 75);
+	border: 1px solid rgba(10, 10, 10, 0.726);
+
 			}
 			&:hover {
 				box-shadow: 0 0 5px 0 #ffffff;

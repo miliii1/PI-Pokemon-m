@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledDiv = styled.div`
 	display: flex;
 	justify-content: center;
-	margin: 130px 0px 60px 0px;
+	margin: 50px 0px 60px 0px;
 	.div_menu {
 		.div_title {
 			display: flex;
@@ -16,12 +16,12 @@ export const StyledDiv = styled.div`
 			}
 		}
 		.input {
-			margin: 0px 0px 0px 0px;
+			margin: 20px 700px 0px 0px;
 			border: 5px;
-			border-radius: 3px;
+			border-radius: 27px;
 			outline: 0;
-			height: 25px;
-			width: 200px;
+			height: 35px;
+			width: 300px;
 			&:focus {
 			}
 		}
@@ -30,16 +30,28 @@ export const StyledDiv = styled.div`
 			justify-content: center;
 
 			.btn_seatch {
-				margin-top: 10px;
-				border: 1px;
-				border-radius: 3px;
-				height: 20px;
-				width: 100px;
-				outline: 0;
-				cursor: pointer;
+				display: flex;
+    background: none;
+    border: none;
+    padding: 0;
+	margin-right: 9px;
+				
 				&:active {
 					outline: 0;
 					transform: translateY(3px);
+				}
+				.searchIcon {
+					width: 37px;
+					border-top-right-radius: 15px;
+					border-bottom-right-radius: 15px;
+	                background-color: yellow;
+					padding-right: 5px;
+					margin-left: -230px;
+                    margin-top: -37px;
+                    margin-block-end: 4px;
+				}
+				.searchIcon:hover {
+					cursor: pointer;
 				}
 			}
 		}

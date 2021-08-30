@@ -7,7 +7,7 @@ export const Nav = () => {
 	return (
 		<StyledDiv>
 			<div className='div_logo'>
-				<Link to='/home' className='logo'>
+				<Link to='/' className='logo'>
 					<h2>Henry Pokemon</h2>
 				</Link>
 			</div>

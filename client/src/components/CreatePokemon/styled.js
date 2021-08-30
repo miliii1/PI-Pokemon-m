@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const StyledDiv = styled.div`
 	display: flex;
 	justify-content: center;
-	margin: 100px 0px 0px 0px;
+	margin: 50px 0px 0px 0px;
 
 	.div_sprite {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin: 10px 0px 10px 0px;
+		margin: -30px 0px 10px 0px;
 		width: fit-content;
 		height: fit-content;
 
@@ -33,6 +33,10 @@ export const StyledDiv = styled.div`
 		list-style: none;
 		width: fit-content;
 		height: fit-content;
+		background-color: rgba(0, 0, 0, 0.55);
+        border-radius: 38px;
+        width: 536px;
+		margin-top: 49px;
 
 		.title {
 			color: white;
@@ -118,7 +122,7 @@ export const StyledDiv = styled.div`
 					border-color: black;
 					border-width: 0px;
 					border-radius: 6px;
-					background-color: #fcf300;
+					background-color: lima;
 					box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
 
 					.label {

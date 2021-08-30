@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyledDiv} from './styled';
+import silueta from '../../img/silueta.png'
 
 export const Create = ({
 	handleSubmit,
@@ -34,17 +35,7 @@ export const Create = ({
 					) : null}
 					<div className='div_sprite'>
 						<div className='div_img'>
-							<img className='img' src={sprite} alt='Sprite' />
-						</div>
-						<div className='div_f_sprite'>
-							<select onChange={(e) => handleSprite(e)}>
-								{sprites &&
-									sprites.map((el, i) => (
-										<option key={i} value={el.sprite}>
-											Model {i + 1}
-										</option>
-									))}
-							</select>
+							<img className='img' src={silueta} alt='Sprite' />
 						</div>
 					</div>
 					{forms &&
@@ -91,7 +82,7 @@ export const Create = ({
 					{Alert.create ? (
 						<div className='div_create_confirm'>
 							<h3 className='message_create'>
-								The Pokemon was created successfully
+								¡El Pokemon se ha creado exitosamente!
 							</h3>
 						</div>
 					) : null}

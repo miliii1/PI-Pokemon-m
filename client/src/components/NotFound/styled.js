@@ -11,14 +11,6 @@ export const StyledDiv = styled.div`
 			text-shadow: 2px 2px 2px black;
 		}
 	}
-	.div_img {
-		display: flex;
-		justify-content: center;
-		.img {
-			padding: 0px;
-			margin: 0px;
-			animation: 1s infinite alternate psyduck;
-		}
 	}
 	@keyframes psyduck {
 		from {

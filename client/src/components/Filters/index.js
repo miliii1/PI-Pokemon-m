@@ -9,12 +9,14 @@ export const Filters = ({
 }) => {
 	return (
 		<StyledDiv>
+			<span>ORDER BY</span>
 			<select name='Filter' onChange={(e) => handleFilter(e)}>
 				<option value='A-Z'>A-Z</option>
 				<option value='Z-A'>Z-A</option>
 				<option value='More Attack'>More Attack</option>
 				<option value='Less Attack'>Less Attack</option>
 			</select>
+			<span>SELECT</span>
 			<select name='Type' onChange={(e) => handleTypes(e)}>
 				<option value='All'>All</option>
 				{pokemonsTypes &&
@@ -24,6 +26,7 @@ export const Filters = ({
 						</option>
 					))}
 			</select>
+			<span>FROM</span>
 			<select name='Origin' onChange={(e) => handleOrigin(e)}>
 				<option value='All'>All</option>
 				<option value='API'>API</option>
