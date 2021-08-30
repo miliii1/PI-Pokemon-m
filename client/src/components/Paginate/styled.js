@@ -9,13 +9,13 @@ export const StyledDiv = styled.div`
 		justify-content: center;
 		background-color: #2a75bb;
 		width: auto;
-		height: 20px;
+		height: 26px;
 		padding: 0px 0px 0px 0px;
 		border: solid #dee2e6;
 		border-width: 2px 2px 2px 0px;
 		border-radius: 3px;
 		margin: 19px 0px 0px 0px;
-		margin-top: -523px;
+		margin-top: -533px;
 
 		.div_list {
 			padding: 3px 0px 0px 0px;
@@ -37,22 +37,25 @@ export const StyledDiv = styled.div`
 		}
 
 		.list {
-			color: #dee2e6;
-			font-size: 14px;
+			font-size: 17px;
 			font-weight: lighter;
 			list-style: none;
 			text-align: center;
 			&:hover {
-				color: black;
+				color: white;
 			}
 		}
 
 		.listed {
 			color: #ffcb05;
-			font-size: 14px;
+			font-size: 17px;
 			font-weight: lighter;
 			list-style: none;
 			text-align: center;
+			&:hover {
+				color: white;
+
+			}
 		}
 	}
 `;

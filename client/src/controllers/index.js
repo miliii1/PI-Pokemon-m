@@ -1,7 +1,6 @@
 import GetPokemonOrder from './GetPokemonOrder';
 import GetPokemonType from './GetPokemonType';
-import GetPokemonOrigin from './GetPokemonOrigin';
-import GetPokemonsViews from './GetPokemonsViews';
+import {GetPokemonOrigin, GetPokemonsViews} from './Pokemon';
 import Validate from './Validate';
 
 export {

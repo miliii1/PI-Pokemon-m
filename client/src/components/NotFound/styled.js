@@ -9,16 +9,11 @@ export const StyledDiv = styled.div`
 			margin: 0px;
 			color: white;
 			text-shadow: 2px 2px 2px black;
+			margin-right: 225px;
 		}
 	}
+	.div_img{
+		margin-left: 45px;
 	}
-	@keyframes psyduck {
-		from {
-			transform: rotate(-10deg);
-		}
-
-		to {
-			transform: rotate(10deg);
-		}
 	}
 `;

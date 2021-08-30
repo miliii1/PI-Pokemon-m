@@ -6,7 +6,7 @@ const NotFound = ({handleClick}) => {
 	return (
 		<>
 			<div value={'All'} onClick={handleClick} className='div_back'>
-				{'< BACK'}
+				{'◀◀'}
 			</div>
 			<StyledDiv>
 				<div className='div_title'>

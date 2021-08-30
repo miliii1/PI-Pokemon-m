@@ -1,3 +1,5 @@
+import {PAGINATE_MAX} from '../utils/constants';
+
 export const GetPokemonOrigin = (origin, array) => {
 	switch (origin) {
 		case 'API':
@@ -14,4 +16,11 @@ export const GetPokemonOrigin = (origin, array) => {
 			return array;
 	}
 };
-export default GetPokemonOrigin;
+export const GetPokemonsViews = (array, min, max) => {
+	if (!min && !max) {
+		return array.slice(0, PAGINATE_MAX);
+	}
+	return array.slice(min, max);
+};
+
+export default {GetPokemonOrigin, GetPokemonsViews};

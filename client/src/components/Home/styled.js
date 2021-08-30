@@ -30,6 +30,7 @@ export const StyledDiv = styled.div`
 	border-color: black;
     display: inline-table;
     border-radius: 0.65rem;
+	margin-top: 3px;
 
 	
 
@@ -83,11 +84,13 @@ export const StyledDiv = styled.div`
 	}
 
 	.div_back {
-		width: 100px;
+		width: 290px;
 		color: white;
 		text-shadow: 1px 2px 1px black;
 		font-size: 20px;
 		cursor: pointer;
+		margin-top: 3px;
+		margin-block-end: 17px;
 		&:hover {
 			transform: translateY(-3px);
 			cursor: pointer;

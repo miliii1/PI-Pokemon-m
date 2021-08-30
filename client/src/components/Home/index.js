@@ -7,7 +7,7 @@ export const Home = ({id, name, types, sprite, pokemonFilter, handleClick}) => {
 		<div>
 			{pokemonFilter === 'Search' ? (
 				<div value={'All'} onClick={handleClick} className='div_back'>
-					{'<-- BACK'}
+					{'◀◀'}
 				</div>
 			) : null}
 			<NavLink to={`/pokemon/${id}`} className='link'>

@@ -10,7 +10,6 @@ import {
 	SPRITES,
 } from '../../utils/constants';
 import Create from './index';
-// import silueta from '../../img/silueta.png'
 
 
 export const CreateContainer = ({pokemonsTypes, getPokemonTypes}) => {
