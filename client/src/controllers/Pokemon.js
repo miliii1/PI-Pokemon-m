@@ -5,7 +5,7 @@ export const GetPokemonOrigin = (origin, array) => {
 		case 'API':
 			return array.filter((el) => typeof el.id === 'number');
 
-		case 'Herry Pokemon':
+		case 'Henry Pokemon':
 			let reg_ex = /-/;
 			return array.filter((el) => el.id.toString().search(reg_ex) !== -1);
 

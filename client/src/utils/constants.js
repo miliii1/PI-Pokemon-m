@@ -8,13 +8,14 @@ export const SPRITE_DEFAULT =
 export const PAGINATE_MAX = 12; // 3
 export const ICONO = 'http://assets.stickpng.com/thumbs/5c790123003fa702a1d2795b.png'
 export const FORMS = [
-	{label: '💬Name', name: 'name'},
-	{label: '❤️HP', name: 'hp'},
-	{label: '💪Attack', name: 'attack'},
-	{label: '🛡️Defense', name: 'defense'},
-	{label: '💨Speed', name: 'speed'},
-	{label: '📏Height', name: 'height'},
-	{label: '⚖️Weight', name: 'weight'},
+	{label: 'Name', name: 'name'},
+	{label: 'HP', name: 'hp'},
+	{label: 'Attack', name: 'attack'},
+	{label: 'Defense', name: 'defense'},
+	{label: 'Speed', name: 'speed'},
+	{label: 'Height', name: 'height'},
+	{label: 'Weight', name: 'weight'},
+	
 ];
 
 

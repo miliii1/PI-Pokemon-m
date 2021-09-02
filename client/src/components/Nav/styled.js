@@ -25,6 +25,13 @@ export const StyledDiv = styled.div`
 			text-decoration: none;
 			color: white;
 			text-shadow: 1px 2px 2px black;
+			background-color: #2a75bb;
+			border-radius: 8px;
+			height: 55px;
+			margin-top: 0px;
+			align-items: center;
+			padding: 0px 3px 0px 3px;
+			justify-content: flex-end;
 		}
 	}
 
@@ -33,7 +40,7 @@ export const StyledDiv = styled.div`
 		display: flex;
 		justify-content: flex-end;
 		margin-right: 100px;
-		color: #161616;
+		color: #1c1ff1a4;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.4rem;
@@ -46,7 +53,8 @@ export const StyledDiv = styled.div`
 			border-width: 0px 1px 0px 1px;
 			padding: 0px 3px 0px 3px;
 			margin-right: 10px;
-			background-color: rgba(31, 4, 6, 0.3);
+			border-radius: 8px;
+			background-color: #2a75bb;
 			.link {
 				text-decoration: none;
 				color: inherit;

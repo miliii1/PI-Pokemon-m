@@ -13,8 +13,9 @@ export const Filters = ({
 			<select name='Filter' onChange={(e) => handleFilter(e)}>
 				<option value='A-Z'>A-Z</option>
 				<option value='Z-A'>Z-A</option>
-				<option value='More Attack'>Attack +</option>
-				<option value='Less Attack'>Attack -</option>
+				<option value='Attack +'>Attack +</option>
+				<option value='Attack -'>Attack -</option>
+
 			</select>
 			<span>SELECT</span>
 			<select name='Type' onChange={(e) => handleTypes(e)}>
@@ -30,7 +31,7 @@ export const Filters = ({
 			<select name='Origin' onChange={(e) => handleOrigin(e)}>
 				<option value='All'>TODOS</option>
 				<option value='API'>API</option>
-				<option value='Companion App'>Creadas</option>
+				<option value='Henry Pokemon'>Creadas</option>
 			</select>
 		</StyledDiv>
 	);

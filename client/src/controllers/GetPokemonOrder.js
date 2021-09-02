@@ -16,7 +16,7 @@ export const GetPokemonOrder = (order, array) => {
 					return -1;
 				}
 			});
-		case 'More Attack':
+		case 'Attack +':
 			return array.sort((a, b) => {
 				if (a.attack < b.attack) {
 					return 1;
@@ -24,7 +24,7 @@ export const GetPokemonOrder = (order, array) => {
 					return -1;
 				}
 			});
-		case 'Less Attack':
+		case 'Attack -':
 			return array.sort((a, b) => {
 				if (a.attack > b.attack) {
 					return 1;
@@ -32,23 +32,8 @@ export const GetPokemonOrder = (order, array) => {
 					return -1;
 				}
 			});
-		case 'Speacial-Attack':
-				return array.sort((a, b) => {
-					if (a.speacialattack < b.speacialattack) {
-						return 1;
-					} else {
-						return -1;
-					}
-				});
-		case 'Less Speacial-Attack':
-				return array.sort((a, b) => {
-					if (a.speacialattack > b.speacialattack) {
-						return 1;
-					} else {
-						return -1;
-					}
-				});
 
+			
 		default:
 			return array;
 	}
