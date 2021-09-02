@@ -36,8 +36,6 @@ conn.sync({force: true}).then(() => {
 				weight: r.data.weight,
 				sprite: r.data.sprites.front_default,
 			})
-				.then((r) => r.setTypes(11))
-				.then(console.log('PSYDUCK were created successfully'))
 		);
 		axios.get(POKEMON_TYPE).then((r) => {
 			r.data.results.forEach((el) => Type.create({name: el.name}));

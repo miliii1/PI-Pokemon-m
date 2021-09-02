@@ -9,3 +9,5 @@ const getAllPokemons = async () => {
 };
 
 module.exports = getAllPokemons;
+
+//trae a los datos de los pokemones de la Api y los de la base de datos y los concatena para despues mostrar todo en la pag

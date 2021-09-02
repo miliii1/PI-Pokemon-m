@@ -29,8 +29,9 @@ export const StyledDiv = styled.div`
                 font-weight: bold;
 			}
 			.id {
-				font-size: 10px;
-				color: white;
+				font-size: 12px;
+				color: black;
+                font-weight: bold;
 				display: flex;
 				justify-content: center;
 				margin: 190px 0px 0px 50px;

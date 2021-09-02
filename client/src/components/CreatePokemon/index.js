@@ -82,7 +82,7 @@ export const Create = ({
 					{Alert.create ? (
 						<div className='div_create_confirm'>
 							<h3 className='message_create'>
-								!El Pokemon se ha creado exitosamente!
+								¡El Pokemon se ha creado exitosamente!
 							</h3>
 						</div>
 					) : null}

@@ -13,21 +13,21 @@ describe('<Nav />', () => {
 		wrapper = shallow(<Nav />);
 	});
 
-	it('It should render three <Link />', () => {
+	it('Debe tener tres <Link />', () => {
 		expect(wrapper.find(Link)).toHaveLength(3);
 	});
-	it('The first link should be part of the logo must have the text "Pokemon Companion App" and lead to /home', () => {
-		expect(wrapper.find(Link).at(0).prop('to')).toEqual('/home');
-		expect(wrapper.find(Link).at(0).text()).toEqual('Pokemon Companion App');
+	it('El primer enlace debe ser parte del logotipo, debe tener el texto "Henry Pokemon" y correr en la ruta /', () => {
+		expect(wrapper.find(Link).at(0).prop('to')).toEqual('/');
+		expect(wrapper.find(Link).at(0).text()).toEqual('Henry Pokemon');
 	});
-	it('The second link must have the text "HOME" and lead to /home', () => {
+	it('El segundo texto debe tener "HOME" y corre en la ruta /home', () => {
 		expect(wrapper.find(Link).at(1).prop('to')).toEqual('/home');
 
 		expect(wrapper.find(Link).at(1).text()).toEqual('HOME');
 	});
-	it('The third link should contain the text "CREATE POKEMON" and change the path to /create', () => {
+	it('El tercer texto debe tener "CREAR POKEMON" y cambiar la ruta a /create', () => {
 		expect(wrapper.find(Link).at(2).prop('to')).toEqual('/create');
 
-		expect(wrapper.find(Link).at(2).text()).toEqual('CREATE POKEMON');
+		expect(wrapper.find(Link).at(2).text()).toEqual('CREAR POKEMON');
 	});
 });

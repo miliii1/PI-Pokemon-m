@@ -39,7 +39,7 @@ router.post('/', async (req, res) => {
 	} = req.body;
 
 	if (!name || !type)
-		return res.status(400).send('Error: Necessary parameters are required');
+		return res.status(400).send('Error: Necesariamente los parametros son requeridos');
 	const createPokemon = await Pokemon.create({
 		name,
 		hp,
@@ -53,5 +53,4 @@ router.post('/', async (req, res) => {
 	await createPokemon.setTypes(type);
 	return res.status(200).send(createPokemon);
 });
-
 module.exports = router;

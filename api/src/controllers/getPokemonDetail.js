@@ -16,3 +16,7 @@ const getPokemonDetail = async (situation, element) => {
 };
 
 module.exports = getPokemonDetail;
+
+//filtra los datos dependiendo del tipo de info que reecibe de prop
+//Con GET_ID filtro por iD y traigo sus datos
+//Con GET_NAME filtro por name y traigo sus datos

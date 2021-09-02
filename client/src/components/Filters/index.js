@@ -13,12 +13,12 @@ export const Filters = ({
 			<select name='Filter' onChange={(e) => handleFilter(e)}>
 				<option value='A-Z'>A-Z</option>
 				<option value='Z-A'>Z-A</option>
-				<option value='More Attack'>More Attack</option>
-				<option value='Less Attack'>Less Attack</option>
+				<option value='More Attack'>Attack +</option>
+				<option value='Less Attack'>Attack -</option>
 			</select>
 			<span>SELECT</span>
 			<select name='Type' onChange={(e) => handleTypes(e)}>
-				<option value='All'>All</option>
+				<option value='All'>TODOS</option>
 				{pokemonsTypes &&
 					pokemonsTypes.map((t, i) => (
 						<option key={i} value={t.name}>
@@ -28,7 +28,7 @@ export const Filters = ({
 			</select>
 			<span>FROM</span>
 			<select name='Origin' onChange={(e) => handleOrigin(e)}>
-				<option value='All'>All</option>
+				<option value='All'>TODOS</option>
 				<option value='API'>API</option>
 				<option value='Companion App'>Creadas</option>
 			</select>
