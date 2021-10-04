@@ -5,7 +5,7 @@ import Search from './index';
 import Filter from '../Filters/FiltersContainer';
 
 export const SearchContainer = ({getPokemonSearch}) => {
-	const [Name, setName] = useState('');
+	const [Name, setName] = useState();
 
 	const handleChange = (e) => {
 		setName(e.target.value);

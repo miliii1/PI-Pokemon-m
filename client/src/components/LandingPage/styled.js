@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import './styled.css';
 import image from '../../img/pokemonFondo.png';
 
+
 export const StyledDiv = styled.div`
 	position: fixed;
 	width: 100%;
@@ -34,13 +35,12 @@ export const StyledDiv = styled.div`
 		padding: 20px 20px 20px 20px;
 		margin-left: 470px;
 
-		.logo-landing {
+		.heade, img {
 			width: 70%;
 			height: auto;
 			margin-top: -25px;
 			margin-left: 55px;
 			margin-right: 35px;
-			
 		}
 
 		.h3 {

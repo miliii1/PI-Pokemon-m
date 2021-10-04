@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const StyledDiv = styled.div`
 	display: flex;
 	justify-content: center;
-
 	.div_container {
 		display: flex;
 		justify-content: center;
@@ -16,7 +15,6 @@ export const StyledDiv = styled.div`
 		border-radius: 3px;
 		margin: 19px 0px 0px 0px;
 		margin-top: -533px;
-
 		.div_list {
 			padding: 3px 0px 0px 0px;
 			width: 23px;
@@ -35,7 +33,6 @@ export const StyledDiv = styled.div`
 			margin: 0px;
 			padding: 0px;
 		}
-
 		.list {
 			font-size: 17px;
 			font-weight: lighter;
@@ -45,7 +42,6 @@ export const StyledDiv = styled.div`
 				color: white;
 			}
 		}
-
 		.listed {
 			color: #ffcb05;
 			font-size: 17px;
@@ -54,9 +50,7 @@ export const StyledDiv = styled.div`
 			text-align: center;
 			&:hover {
 				color: white;
-
 			}
 		}
 	}
 `;
-

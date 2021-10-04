@@ -36,9 +36,6 @@ conn.sync({force: true}).then(() => {
 				speed: a.data.stats[5].base_stat,
 				height: a.data.height,
 				weight: a.data.weight,
-				Types: a.types.map((a) => {
-					return {name: a.type.name};
-				}),
 				sprite: a.data.sprites.front_default,
 			})
 		);

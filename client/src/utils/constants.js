@@ -7,6 +7,7 @@ export const SPRITE_DEFAULT =
 	'https://raw.githubusercontent.com/miliii1/siluetapoke/master/index.png?token=ATENESFENDY6T7GBSGB7FEDBFPVYI';
 export const PAGINATE_MAX = 12; // 3
 export const ICONO = 'http://assets.stickpng.com/thumbs/5c790123003fa702a1d2795b.png'
+
 export const FORMS = [
 	{label: 'Name', name: 'name'},
 	{label: 'HP', name: 'hp'},

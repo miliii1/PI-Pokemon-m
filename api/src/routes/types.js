@@ -7,3 +7,5 @@ router.get('/', async (req, res) => {
 	return res.status(200).send(totalTypes);
 });
 module.exports = router;
+
+// los types de la bsaede datos

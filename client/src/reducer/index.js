@@ -81,7 +81,7 @@ const pokeReducer = (state = initialState, {payload, type}) => {
 					all: GetPokemonOrigin(payload, state.pokemons),
 				},
 
-				pokemonOrigin: payload, /// API
+				pokemonOrigin: payload, //la api
 				pokemonFilter: payload,
 			};
 		case 'POKEMONS_TYPE':

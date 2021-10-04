@@ -8,3 +8,4 @@ module.exports = (sequelize) => {
 		},
 	});
 };
+//aquiiii se encuentra las tabla type con sus propiedades

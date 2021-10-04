@@ -14,7 +14,54 @@ export const StyledDiv = styled.div`
 		width: 900px;
 		height: 500px;
 		margin-top: -29px;
-
+		.unset {
+			background-color: rgb(233, 237, 245);
+		}
+		.fire{
+			background-color: rgba(252, 6, 6, 0.37);
+			border: 2px solid transparent;
+	        border-color: red;
+		}
+		.water{
+			background-color: rgba(0, 84, 240, 0.39);
+			border: 2px solid transparent;
+	        border-color: rgba(0, 84, 240, 0.959);
+		}
+		.poison {
+			background-color: rgba(248, 44, 200, 0.479);
+			border: 2px solid transparent;
+	        border-color: rgba(248, 44, 200, 0.87);
+		}
+		.normal{
+			background-color: rgba(15, 15, 15, 0.486);
+			border: 2px solid transparent;
+	        border-color: black;
+		}
+		.grass {
+			background-color: rgba(6, 247, 6, 0.404);
+			border: 2px solid transparent;
+	        border-color: rgba(6, 247, 6, 0.767);
+		}
+		.bug {
+			background-color: rgba(157, 6, 245, 0.432);
+			border: 2px solid transparent;
+	        border-color: rgba(157, 6, 245, 0.87);
+		}
+		.electric {
+			background-color: rgba(248, 232, 0, 0.452);
+			border: 2px solid transparent;
+	        border-color: rgba(248, 232, 0, 0.932);
+		}
+		.ground {
+			background-color: rgba(255, 115, 0, 0.548);
+			border: 2px solid transparent;
+	        border-color: rgba(255, 115, 0, 0.959);
+		}
+		.fairy {
+			background-color: rgba(12, 16, 245, 0.473);
+			border: 2px solid transparent;
+	        border-color: rgba(12, 16, 245, 0.808);
+		}
 
 		.link {
 			text-decoration: none;
@@ -25,13 +72,13 @@ export const StyledDiv = styled.div`
 			text-align: center;
 			margin: 5px;
 			height: 160px;
-			background-color: rgba(15, 15, 15, 0.486);
-			border: 2px solid transparent;
-	border-color: black;
-    display: inline-table;
-    border-radius: 0.65rem;
-	margin-top: 3px;
-
+			// background-color: rgba(15, 15, 15, 0.486);
+			// border: 2px solid transparent;
+	        // border-color: black;
+            display: inline-table;
+            border-radius: 0.65rem;
+	        margin-top: 3px;
+	
 	
 
 			.div_name {
@@ -52,15 +99,16 @@ export const StyledDiv = styled.div`
 					padding: 1px 1px 1px 1px;
 					font-size: 18px;
 					border-style: solid;
-					border-color: black;
+					border-color: white;
 					border-width: 0px;
 					border-radius: 6px;
-					background-color: lime;
+					background-color: white;
 					box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
 
 					.p {
 						margin: 0px 7px 0px 7px;
 					}
+					
 				}
 			}
 

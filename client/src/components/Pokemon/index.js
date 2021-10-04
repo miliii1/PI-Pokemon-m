@@ -2,6 +2,8 @@ import React from 'react';
 import {FORMS} from '../../utils/constants';
 import {StyledDiv} from './styled';
 
+
+
 const Pokemon = ({
 	id,
 	name,
@@ -14,6 +16,7 @@ const Pokemon = ({
 	types,
 	sprite,
 }) => {
+	
 	return (
 		<StyledDiv>
 			<div className='div_card'>

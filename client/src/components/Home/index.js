@@ -3,6 +3,9 @@ import {NavLink} from 'react-router-dom';
 
 
 export const Home = ({id, name, types, sprite, pokemonFilter, handleClick}) => {
+	const color = types.map(type => {
+        return type.name
+    }).join(" ")
 	return (
 		<div>
 			{pokemonFilter === 'Search' ? (
@@ -11,7 +14,8 @@ export const Home = ({id, name, types, sprite, pokemonFilter, handleClick}) => {
 				</div>
 			) : null}
 			<NavLink to={`/pokemon/${id}`} className='link'>
-				<div className='div_card'>
+				<div className={`div_card ${color}`}> 
+				{/* <img className={`pokemon-home-image ${color}`} src={image} alt='loading'></img> */}
 					<img className='img' src={sprite} alt='Sprite' />
 					<div className='div_name'>{name}</div>
 					<div className='div_type_container'>

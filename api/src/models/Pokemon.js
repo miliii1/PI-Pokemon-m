@@ -1,5 +1,5 @@
 const {DataTypes} = require('sequelize');
-
+//aqui esta la tabla de pokemon con sus propiedades
 module.exports = (sequelize) => {
 	sequelize.define(
 		'Pokemon',
