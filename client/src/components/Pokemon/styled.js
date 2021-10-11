@@ -3,15 +3,18 @@ import styled from 'styled-components';
 export const StyledDiv = styled.div`
 	display: flex;
 	justify-content: center;
-	margin-top: 140px;
+	margin-top: 180px;
 
 	.div_card {
 		display: flex;
 		display: table;
 		list-style: none;
-		margin: 0px 0px 0px 0px;
-		width: 600px;
-		height: 400px;
+		margin: -50px 0px 0px 0px;
+		width: -100px;
+		height: 80px;
+		background-color: rgba(128, 128, 128, 0.384);
+		border: 3px solid #000;
+
 
 		.div_details {
 			display: grid;
@@ -21,12 +24,13 @@ export const StyledDiv = styled.div`
 			
 
 			.text {
-				line-height: 50px;
+				line-height: 30px;
 				font-size: 25px;
 				color: black;
 				text-shadow: 1px 2px 2px black;
 				font-family: consolas;
                 font-weight: bold;
+				margin: 0px 0px 4px -70px;
 			}
 			.id {
 				font-size: 12px;
@@ -41,7 +45,7 @@ export const StyledDiv = styled.div`
 		.div_title {
 			display: flex;
 			justify-content: center;
-			margin: -38px 0px 0px 0px;
+			margin: 18px 0px 0px 0px;
 			width: auto;
 			height: 60px;
 			color: white;
@@ -50,10 +54,9 @@ export const StyledDiv = styled.div`
 		}
 
 		.div_img {
-			display: table;
-			width: 100px;
-			height: 100px;
-			margin: 0px 0px 0px 230px;
+			width: 230px;
+			padding: 10px;
+			margin: 0px 0px 4px 80px;
 
 			.div_type_container {
 				display: flex;

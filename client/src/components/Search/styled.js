@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledDiv = styled.div`
 	display: flex;
 	justify-content: center;
-	margin: 50px 0px 60px 0px;
+	margin: 50px 0px 80px 0px;
 	.div_menu {
 		.div_title {
 			display: flex;
@@ -12,7 +12,7 @@ export const StyledDiv = styled.div`
 			margin: 0px 0px 0px 0px;
 			.title {
 				color: white;
-				text-shadow: 3px 2px 4px black;
+				text-shadow: 6px 2px 4px black;
 			}
 		}
 		.input {
