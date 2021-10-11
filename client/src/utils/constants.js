@@ -10,12 +10,12 @@ export const ICONO = 'https://raw.githubusercontent.com/miliii1/siluetapoke/mast
 
 export const FORMS = [
 	{label: 'Name', name: 'name'},
-	{label: 'HP', name: 'hp'},
-	{label: 'Attack', name: 'attack'},
-	{label: 'Defense', name: 'defense'},
-	{label: 'Speed', name: 'speed'},
-	{label: 'Height', name: 'height'},
-	{label: 'Weight', name: 'weight'},
+	{label: '❤️HP', name: 'hp'},
+	{label: '💪Attack', name: 'attack'},
+	{label: '🛡️Defense', name: 'defense'},
+	{label: '💨Speed', name: 'speed'},
+	{label: '📏Height', name: 'height'},
+	{label: '⚖️Weight', name: 'weight'},
 	
 ];
 

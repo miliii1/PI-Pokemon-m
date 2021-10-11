@@ -15,7 +15,7 @@ export const PokemonContainer = ({
 	}, []);
 
 	return (
-		<div>
+		<div className='card-content'>
 			{pokemonDetail && (
 				<Pokemon
 					id={pokemonDetail.id}

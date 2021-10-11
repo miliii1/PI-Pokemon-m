@@ -4,28 +4,19 @@ import {StyledDiv} from './styled';
 
 
 
-const Pokemon = ({
-	id,
-	name,
-	hp,
-	attack,
-	defense,
-	speed,
-	height,
-	weight,
-	types,
-	sprite,
-}) => {
-	
+const Pokemon = ({ id, name, hp, attack, defense, speed, height, weight, types, sprite }) => {
+	const color = types.map(type => {
+        return type.name
+    }).join(" ")
 	return (
 		<StyledDiv>
 			<div className='div_card'>
 				<div className='div_title'>
 					<h1>{name.toUpperCase()}</h1>
 				</div>
-				<div className='div_img'>
+				<div className={`div_contain ${color}`}>
 					<img src={sprite} className='img' alt='sprite' />
-					<div className='div_type_container'>
+					<div className='div_typecontainer'>
 						{types &&
 							types.map((el, i) => (
 								<div key={i} className='div_types'>
@@ -35,7 +26,7 @@ const Pokemon = ({
 								</div>
 							))}
 					</div>
-				</div>
+             </div>
 				<div className='div_details'>
 					{FORMS &&
 						FORMS.map((el, i) =>
