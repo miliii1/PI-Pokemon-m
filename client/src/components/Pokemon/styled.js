@@ -201,16 +201,16 @@ export const StyledDiv = styled.div`
             height: 404px;
             margin-top: -75px;
 			.img {
-				height: 305px;
-				margin: 0px 0px 0px 90px;
-				margin-top: 75px;
+				height: 255px;
+				margin: 0px 0px 0px 111px;
+				margin-top: 130px;
 				   
 				   &:hover {
 					   transform: scaleX(-1);
 				   }
 			   }
 		}
-		.flying{
+		.flying {
 			background-color: rgba(252, 6, 80, 0.233);
 			border: 2px solid transparent;
 			border-color: rgba(252, 6, 80, 0.904);
@@ -218,9 +218,63 @@ export const StyledDiv = styled.div`
             height: 404px;
             margin-top: -75px;
 			.img {
-				height: 295px;
-				margin: 0px 0px 0px 90px;
-				margin-top: 75px;
+				height: 255px;
+				margin: 0px 0px 0px 111px;
+				margin-top: 130px;
+				   
+				   &:hover {
+					   transform: scaleX(-1);
+				   }
+			   }
+		}
+
+		.rock {
+			background-color: rgba(87, 7, 7, 0.699);
+			border: 2px solid transparent;
+			border-color: rgba(87, 7, 7, 0.993);
+			width: 750px;
+            height: 404px;
+            margin-top: -75px;
+			.img {
+				height: 255px;
+				margin: 0px 0px 0px 111px;
+				margin-top: 130px;
+				   
+				   &:hover {
+					   transform: scaleX(-1);
+				   }
+			   }
+		}
+		
+		.ghost {
+			background-color: rgba(22, 77, 34, 0.692);
+			border: 2px solid transparent;
+			border-color: rgb(14, 66, 25);
+			width: 750px;
+            height: 404px;
+            margin-top: -75px;
+			.img {
+				height: 255px;
+				margin: 0px 0px 0px 111px;
+				margin-top: 130px;
+				   
+				   &:hover {
+					   transform: scaleX(-1);
+				   }
+			   }
+		}
+
+		.steel {
+			background-color: rgba(19, 141, 90, 0.699);
+			border: 2px solid transparent;
+			border-color: rgba(19, 141, 90, 0.877);
+			width: 750px;
+            height: 404px;
+            margin-top: -75px;
+			.img {
+				height: 255px;
+				margin: 0px 0px 0px 111px;
+				margin-top: 130px;
 				   
 				   &:hover {
 					   transform: scaleX(-1);
