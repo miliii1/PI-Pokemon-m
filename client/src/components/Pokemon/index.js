@@ -16,7 +16,7 @@ const Pokemon = ({ id, name, hp, attack, defense, speed, height, weight, types, 
 				</div>
 				<div className={`div_contain ${color}`}>
 					<img src={sprite} className='img' alt='sprite' />
-					<div className='div_typecontainer'>
+					<div className='container'>
 						{types &&
 							types.map((el, i) => (
 								<div key={i} className='div_types'>

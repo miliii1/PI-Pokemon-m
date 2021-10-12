@@ -281,6 +281,75 @@ export const StyledDiv = styled.div`
 				   }
 			   }
 		}
+		.psychic {
+			background-color: rgba(106, 185, 14, 0.616);
+			border: 2px solid transparent;
+			border-color: rgba(89, 151, 18, 0.952);
+			width: 750px;
+            height: 404px;
+            margin-top: -75px;
+			.img {
+				height: 255px;
+				margin: 0px 0px 0px 111px;
+				margin-top: 130px;
+				   
+				   &:hover {
+					   transform: scaleX(-1);
+				   }
+			   }
+		}
+		.ice {
+			background-color: rgba(110, 216, 219, 0.616);
+			border: 2px solid transparent;
+			border-color: rgb(110, 215, 219);
+			width: 750px;
+            height: 404px;
+            margin-top: -75px;
+			.img {
+				height: 255px;
+				margin: 0px 0px 0px 111px;
+				margin-top: 130px;
+				   
+				   &:hover {
+					   transform: scaleX(-1);
+				   }
+			   }
+		}
+		.dragon {
+			background-color: rgba(93, 102, 102, 0.616);
+			border: 2px solid transparent;
+			border-color: rgba(93, 102, 102, 0.959);
+			width: 750px;
+            height: 404px;
+            margin-top: -75px;
+			.img {
+				height: 255px;
+				margin: 0px 0px 0px 111px;
+				margin-top: 130px;
+				   
+				   &:hover {
+					   transform: scaleX(-1);
+				   }
+			   }
+		}
+		.unknown {
+			background-color: rgba(255, 255, 255, 0.534);
+			border: 2px solid transparent;
+			border-color: rgba(255, 255, 255, 0.986);
+			width: 750px;
+            height: 404px;
+            margin-top: -75px;
+			.img {
+				height: 255px;
+				margin: 0px 0px 0px 111px;
+				margin-top: 130px;
+				   
+				   &:hover {
+					   transform: scaleX(-1);
+				   }
+			   }
+		}
+		
 		
 
 		.div_details {
@@ -305,7 +374,7 @@ export const StyledDiv = styled.div`
                 font-weight: bold;
 				display: flex;
 				justify-content: center;
-				margin: 190px 0px 0px 50px;
+				margin: 25px 0px 0px -40px;
 			}
 		}
 
@@ -317,20 +386,19 @@ export const StyledDiv = styled.div`
 			height: 60px;
 			color: white;
 			font-size: 25px;
-			text-shadow: 1px 1px 1px black;
+			text-shadow: 1px 3px 1px black;
 		}
 
 		.div_img {
 			width: 230px;
 			padding: 10px;
 
-
-			.div_type_container {
+			.container {
 				display: flex;
 				flex-direction: row;
 				justify-content: center;
 				.div_types {
-					margin: 9px 0px 0px 35px;
+					margin: -5px 0px 0px 5px;
 					padding: 1px 1px 1px 1px;
 					font-size: 18px;
 					border-style: solid;

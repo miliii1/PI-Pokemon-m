@@ -62,6 +62,51 @@ export const StyledDiv = styled.div`
 			border: 2px solid transparent;
 	        border-color: rgba(12, 16, 245, 0.808);
 		}
+		.fighting{
+			background-color: rgba(6, 252, 231, 0.233);
+			border: 2px solid transparent;
+			border-color: rgba(6, 252, 231, 0.925);
+		}
+		.flying {
+			background-color: rgba(252, 6, 80, 0.233);
+			border: 2px solid transparent;
+			border-color: rgba(252, 6, 80, 0.904);
+		}
+		.rock {
+			background-color: rgba(87, 7, 7, 0.699);
+			border: 2px solid transparent;
+			border-color: rgba(87, 7, 7, 0.993);
+		}
+		.ghost {
+			background-color: rgba(22, 77, 34, 0.692);
+			border: 2px solid transparent;
+			border-color: rgb(14, 66, 25);
+		}
+		.steel {
+			background-color: rgba(19, 141, 90, 0.699);
+			border: 2px solid transparent;
+			border-color: rgba(19, 141, 90, 0.877);
+		}
+		.psychic {
+			background-color: rgba(106, 185, 14, 0.616);
+			border: 2px solid transparent;
+			border-color: rgba(89, 151, 18, 0.952);
+		}
+		.ice {
+			background-color: rgba(110, 216, 219, 0.616);
+			border: 2px solid transparent;
+			border-color: rgb(110, 215, 219);
+		}
+		.dragon {
+			background-color: rgba(93, 102, 102, 0.616);
+			border: 2px solid transparent;
+			border-color: rgba(93, 102, 102, 0.959);
+		}
+		.unknown {
+			background-color: rgba(255, 255, 255, 0.534);
+			border: 2px solid transparent;
+			border-color: rgba(255, 255, 255, 0.986);
+		}
 
 		.link {
 			text-decoration: none;
