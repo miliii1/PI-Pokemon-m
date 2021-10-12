@@ -22,16 +22,15 @@ export const StyledDiv = styled.div`
 		font-family: 'Fjalla One';
 
 		.logo {
-			text-decoration: none;
-			color: white;
-			text-shadow: 1px 2px 2px black;
-			background-color: #2a75bb;
-			border-radius: 8px;
-			height: 55px;
-			margin-top: 0px;
-			align-items: center;
-			padding: 0px 3px 0px 3px;
-			justify-content: flex-end;
+			width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		margin-right: 100px;
+		color: #1c1ff1a4;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-shadow: 1px 3px 3px #3D84B8 ;
 		}
 	}
 

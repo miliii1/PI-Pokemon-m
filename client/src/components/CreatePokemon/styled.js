@@ -147,6 +147,7 @@ export const StyledDiv = styled.div`
 				text-shadow: 2px 2px 2px black;
 				font-size: 20px;
 				background-color: #2a75bb;
+				margin: 22px;
 				&:hover {
 					box-shadow: 0 0 5px 0 #ffffff;
 				}

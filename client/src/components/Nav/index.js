@@ -8,7 +8,7 @@ export const Nav = () => {
 		<StyledDiv>
 			<div className='div_logo'>
 				<Link to='/' className='logo'>
-					<h2>Henry Pokemon</h2>
+					<h2>Pokex</h2>
 				</Link>
 			</div>
 			<div className='div_menu'>
