@@ -219,9 +219,7 @@ export const StyledDiv = styled.div`
             margin-top: -75px;
 			.img {
 				height: 255px;
-				margin: 0px 0px 0px 111px;
-				margin-top: 130px;
-				   
+				margin: 105px 10px 10px 111px;
 				   &:hover {
 					   transform: scaleX(-1);
 				   }
@@ -340,18 +338,14 @@ export const StyledDiv = styled.div`
             height: 404px;
             margin-top: -75px;
 			.img {
-				height: 255px;
-				margin: 0px 0px 0px 111px;
-				margin-top: 130px;
-				   
+				height: 225px;
+				margin: 130px 0px 30px 125px;
 				   &:hover {
 					   transform: scaleX(-1);
 				   }
 			   }
 		}
 		
-		
-
 		.div_details {
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(200px, 0fr));
@@ -388,17 +382,12 @@ export const StyledDiv = styled.div`
 			font-size: 25px;
 			text-shadow: 1px 3px 1px black;
 		}
-
-		.div_img {
-			width: 230px;
-			padding: 10px;
-
 			.container {
 				display: flex;
 				flex-direction: row;
 				justify-content: center;
 				.div_types {
-					margin: -5px 0px 0px 5px;
+					margin: -25px 150px 0px -120px;
 					padding: 1px 1px 1px 1px;
 					font-size: 18px;
 					border-style: solid;
@@ -413,6 +402,5 @@ export const StyledDiv = styled.div`
 					}
 				}
 			}
-		}
 	}
 `;
